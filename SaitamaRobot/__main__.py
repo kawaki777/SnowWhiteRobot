@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 You dare to PM me, you little brat! 
-Well if you Pm'ed me, then just listen now!
+Well if you did, then just listen now!
 My name is Attack Titan! I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
