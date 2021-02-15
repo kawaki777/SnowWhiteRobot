@@ -144,7 +144,7 @@ def send_help(chat_id, text, keyboard=None):
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
     # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
-    update.effective_message.reply_text("This person edited a message")
+    update.effective_message.reply_text("This Eldian edited a message")
     print(update.effective_message)
 
 
@@ -196,7 +196,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Karma to your group",
+                            text="☑️ Add Attack Titan to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -220,7 +220,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
+            "I'm awake already!\n<b>Haven't eaten Titans since:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -483,38 +483,6 @@ def get_settings(update: Update, context: CallbackContext):
         send_settings(chat.id, user.id, True)
 
 
-@run_async
-def donate(update: Update, context: CallbackContext):
-    user = update.effective_message.from_user
-    chat = update.effective_chat  # type: Optional[Chat]
-    bot = context.bot
-    if chat.type == "private":
-        update.effective_message.reply_text(
-            DONATE_STRING,
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True)
-
-        if OWNER_ID != 254318997 and DONATION_LINK:
-            update.effective_message.reply_text(
-                "You can also donate to the person currently running me "
-                "[here]({})".format(DONATION_LINK),
-                parse_mode=ParseMode.MARKDOWN)
-
-    else:
-        try:
-            bot.send_message(
-                user.id,
-                DONATE_STRING,
-                parse_mode=ParseMode.MARKDOWN,
-                disable_web_page_preview=True)
-
-            update.effective_message.reply_text(
-                "I've PM'ed you about donating to my creator!")
-        except Unauthorized:
-            update.effective_message.reply_text(
-                "Contact me in PM first to get donation information.")
-
-
 def migrate_chats(update: Update, context: CallbackContext):
     msg = update.effective_message  # type: Optional[Message]
     if msg.migrate_to_chat_id:
@@ -582,7 +550,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling. Karma Started Sucessfully")
+        LOGGER.info("Using long polling. Attack Titan Started Sucessfully")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
