@@ -59,7 +59,7 @@ You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is Karma Akabane.
+Hey there Eldian!.
 Have a look at the following for an idea of some of \
 the things I can help you with.
 
@@ -79,11 +79,6 @@ And the following:
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 SAITAMA_IMG = "https://img.wonderhowto.com/img/50/83/63581465344916/0/attack-titan-diy-eren-jaeger-makeup-effects-for-halloween.w1456.jpg"
-
-DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
