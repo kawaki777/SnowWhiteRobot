@@ -51,7 +51,7 @@ from SaitamaRobot.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 446243273  # your telegram ID
-    OWNER_USERNAME = "Official_Eren_Yeager"  # your telegram username
+    OWNER_USERNAME = "PaulLarson"  # your telegram username
     API_KEY = "1564280965:AAGTsuwCwl-BxAqM6MM_xaJAgK8FgAd6MIA"  # your api key, as provided by the @botfather
     SQLALCHEMY_DATABASE_URI = 'postgres://junjqotzuzxdwt:8bc552adb46f256460bd1fe37d4f26c6118eb0ea32b0eefea5cffa59dfad46c3@ec2-3-215-207-12.compute-1.amazonaws.com:5432/dfav2m6j6d3ff8'  # sample db credentials
     JOIN_LOGGER = '-1001442050393' # some group chat that your bot is a member of
