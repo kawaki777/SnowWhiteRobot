@@ -13,11 +13,6 @@ News channel as at [Attack Titan • Updates](https://t.me/attacktitanupdates)
 
 ## How to setup/deploy.
 
-### Read these notes carefully before proceeding 
- - Your code must be open source and a link to your fork's repository must be there in the start reply of the bot [See this](https://github.com/IAmKarToon/KarmaRobot)
- - Lastly, if you are found to run this repo without the code being open sourced or the repository link not mentioned in the bot, we will push a gban for you in our network because of being in violation of the license, you are free to be a dick and not respect the open source code (we do not mind) but we will not be having you around our chats
- - This repo does not come with technical support, so DO NOT come to us asking help about deploy/console errors
-
 <details>
   <summary>Steps to deploy on Heroku !! </summary>
 
@@ -55,13 +50,13 @@ An example `config.py` file could be:
 from SaitamaRobot.sample_config import Config
 
 class Development(Config):
-    OWNER_ID = 254318997  # your telegram ID
-    OWNER_USERNAME = "SonOfLars"  # your telegram username
-    API_KEY = "your bot api key"  # your api key, as provided by the @botfather
-    SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
-    JOIN_LOGGER = '-1234567890' # some group chat that your bot is a member of
+    OWNER_ID = 446243273  # your telegram ID
+    OWNER_USERNAME = "Official_Eren_Yeager"  # your telegram username
+    API_KEY = "1564280965:AAGTsuwCwl-BxAqM6MM_xaJAgK8FgAd6MIA"  # your api key, as provided by the @botfather
+    SQLALCHEMY_DATABASE_URI = 'postgres://junjqotzuzxdwt:8bc552adb46f256460bd1fe37d4f26c6118eb0ea32b0eefea5cffa59dfad46c3@ec2-3-215-207-12.compute-1.amazonaws.com:5432/dfav2m6j6d3ff8'  # sample db credentials
+    JOIN_LOGGER = '-1001442050393' # some group chat that your bot is a member of
     USE_JOIN_LOGGER = True
-    DRAGONS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
+    DRAGONS = [1332488717, 1392872370, 1100420431]  # List of id's for users which have sudo access to the bot.
     LOAD = []
     NO_LOAD = ['translation']
 ```
