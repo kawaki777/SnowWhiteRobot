@@ -290,6 +290,10 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThis user cannot be banned, flood kicked but can be manually banned by admins. They can be muted."
         disaster_level_present = True
 
+        if disaster_level_present:
+        text += ' [<a href="https://t.me/attacktitanupdates">?</a>]'.format(
+            bot.username)
+        
     try:
         user_member = chat.get_member(user.id)
         if user_member.status == 'administrator':
