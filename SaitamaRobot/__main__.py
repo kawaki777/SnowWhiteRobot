@@ -61,7 +61,7 @@ You can find my list of available commands with /help.
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Teacher who will made your group secure and help admins manage their groups with Anime Sensei! Have a look at the following for an idea of some of the things I can help you with.
+I'm a zerotwo who will made your group secure and help admins manage their groups with Anime Sensei! Have a look at the following for an idea of some of the things I can help you with.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -201,7 +201,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="🧲Add Koro Sensei to your group!",
+                            text="🧲Add Zerotwo to your group!",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -211,17 +211,22 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔔Updates Channel",
-                             url="https://t.me/KoroSenseiUpdate")
+                             url="https://t.me/zerotwoupdate")
                      ],
                      [
                          InlineKeyboardButton(
                              text="📖 Getting Started Guide",
-                             url="https://t.me/koroSenseiUpdate/5")
+                             url="https://t.me/zerotwoupdate")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="💾 Source Code.",
-                             url="https://github.com/Koro-Sensei-0/Haruki")
+                             text=" owner.",
+                             url="https://t.me/mr_godfather9")
+                     [,
+                     ]
+                        InlineKeyboardButton(
+                             text=" logs.",
+                             url="https://t.me/zerotwolog")
                      ]]))
     else:
         update.effective_message.reply_text(
