@@ -219,9 +219,6 @@ def start(update: Update, context: CallbackContext):
                              url="https://t.me/zerotwoupdate")
                      ],
                      [
-                         InlineKeyboardButton(
-                             text="📖 owner.",
-                             url="https://t.me/mr_godfather9")
                         InlineKeyboardButton(
                              text="📖 logs.",
                              url="https://t.me/zerotwolog")
