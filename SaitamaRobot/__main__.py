@@ -222,10 +222,8 @@ def start(update: Update, context: CallbackContext):
                          InlineKeyboardButton(
                              text="📖 owner.",
                              url="https://t.me/mr_godfather9")
-                     [,
-                     ]
                         InlineKeyboardButton(
-                             text="📖logs.",
+                             text="📖 logs.",
                              url="https://t.me/zerotwolog")
                      ]]))
     else:
