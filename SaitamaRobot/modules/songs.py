@@ -1,9 +1,9 @@
 import os
 
 import aiohttp
-from pyrogram import filters
-from pytube import YouTube
-from youtubesearchpython import VideosSearch
+from saitamarobot import filters
+from saitamarobot import YouTube
+from saitamarobot import VideosSearch
 
 from SaitamaRobot import LOGGER, pbot
 from SaitamaRobot.utils.ut import get_arg
