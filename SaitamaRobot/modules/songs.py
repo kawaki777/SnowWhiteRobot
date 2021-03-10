@@ -1,7 +1,6 @@
 import os
 
 import aiohttp
-from SaitamaRobot import filters
 from SaitamaRobot import YouTube
 from SaitamaRobot import VideosSearch
 
