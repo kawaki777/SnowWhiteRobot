@@ -5,8 +5,8 @@ from pyrogram import filters
 from pytube import YouTube
 from youtubesearchpython import VideosSearch
 
-from LEGEND import LOGGER, pbot
-from LEGEND.utils.ut import get_arg
+from SaitamaRobot import LOGGER, pbot
+from SaitamaRobot.utils.ut import get_arg
 
 
 def yt_search(song):
