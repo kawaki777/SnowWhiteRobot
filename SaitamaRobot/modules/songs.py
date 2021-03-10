@@ -1,9 +1,9 @@
 import os
 
 import aiohttp
-from saitamarobot import filters
-from saitamarobot import YouTube
-from saitamarobot import VideosSearch
+from SaitamaRobot import filters
+from SaitamaRobot import YouTube
+from SaitamaRobot import VideosSearch
 
 from SaitamaRobot import LOGGER, pbot
 from SaitamaRobot.utils.ut import get_arg
