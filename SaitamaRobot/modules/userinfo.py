@@ -461,7 +461,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust Sensei Association to set my bio.")
+                "Erm... yeah, I only trust zerotwo to set my bio.")
             return
 
         text = message.text
@@ -514,7 +514,7 @@ Examples:
  • `/info`*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/koroSenseiUpdate/8)
+ Come and see [HP System explained](https://t.me/zerotwosupport)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
