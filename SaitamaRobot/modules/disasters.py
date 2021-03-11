@@ -63,16 +63,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a Dragon Disaster")
+        message.reply_text("This member is already a Strelizia Disaster")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HA to promote a Demon Disaster to Dragon."
+        rt += "Requested HA to promote a Delphinium Disaster to Strelizia."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote a Wolf Disaster to Dragon."
+        rt += "Requested HA to promote a Argentia Disaster to Streilizia."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -83,7 +83,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nSuccessfully set Disaster level of {} to Dragon!".format(
+        rt + "\nSuccessfully set Disaster level of {} to Strelizia!".format(
             user_member.first_name))
 
     log_message = (
@@ -122,16 +122,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HA to demote this Dragon to Demon"
+        rt += "Requested HA to demote this Strelizia to Delphinium"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a Demon Disaster.")
+        message.reply_text("This user is already a Delphinium Disaster.")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested HA to promote this Wolf Disaster to Demon"
+        rt += "Requested HA to promote this Argentia Disaster to Delphinium"
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -142,7 +142,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a Demon Disaster!")
+        rt + f"\n{user_member.first_name} was added as a Delphinium Disaster!")
 
     log_message = (
         f"#SUPPORT\n"
@@ -177,12 +177,12 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Dragon Disaster, Demoting to Wolf."
+        rt += "This member is a Strelizia Disaster, Demoting to Argenti."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon Disaster, Demoting to Wolf."
+        rt += "This user is already a Delphinium Disaster, Demoting to Argentia."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
@@ -233,25 +233,25 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Dragon Disaster, Demoting to Tiger."
+        rt += "This member is a Strelizia Disaster, Demoting to Genista."
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon Disaster, Demoting to Tiger."
+        rt += "This user is already a Delphinium Disaster, Demoting to Genista."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a Wolf Disaster, Demoting to Tiger."
+        rt += "This user is already a Argentia Disaster, Demoting to Genista."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Tiger.")
+        message.reply_text("This user is already a Genista.")
         return ""
 
-    data['tigers'].append(user_id)
+    data['genistas'].append(user_id)
     TIGERS.append(user_id)
 
     with open(ELEVATED_USERS_FILE, 'w') as outfile:
@@ -259,11 +259,11 @@ def addtiger(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt +
-        f"\nSuccessfully promoted {user_member.first_name} to a Tiger Disaster!"
+        f"\nSuccessfully promoted {user_member.first_name} to a Genista Disaster!"
     )
 
     log_message = (
-        f"#TIGER\n"
+        f"#GENISTA\n"
         f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))} \n"
         f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
     )
@@ -314,7 +314,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Dragon Disaster!")
+        message.reply_text("This user is not a Strelizia Disaster!")
         return ""
 
 
@@ -357,7 +357,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Demon level Disaster!")
+        message.reply_text("This user is not a Delphinium level Disaster!")
         return ""
 
 
@@ -399,7 +399,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Wolf Disaster!")
+        message.reply_text("This user is not a Argentia Disaster!")
         return ""
 
 
@@ -422,16 +422,16 @@ def removetiger(update: Update, context: CallbackContext) -> str:
     with open(ELEVATED_USERS_FILE, 'r') as infile:
         data = json.load(infile)
 
-    if user_id in TIGERS:
+    if user_id in GENISTAS:
         message.reply_text("Demoting to normal user")
         TIGERS.remove(user_id)
-        data['tigers'].remove(user_id)
+        data['Genistas'].remove(user_id)
 
         with open(ELEVATED_USERS_FILE, 'w') as outfile:
             json.dump(data, outfile, indent=4)
 
         log_message = (
-            f"#UNTIGER\n"
+            f"#UNGENISTA\n"
             f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             f"<b>User:</b> {mention_html(user_member.id, html.escape(user_member.first_name))}"
         )
@@ -441,14 +441,14 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Tiger Disaster!")
+        message.reply_text("This user is not a Genista Disaster!")
         return ""
 
 
 @run_async
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Wolf Disasters 🐺:</b>\n"
+    reply = "<b>Known Argentia Disasters 🐺:</b>\n"
     bot = context.bot
     for each_user in WOLVES:
         user_id = int(each_user)
@@ -464,7 +464,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 @run_async
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Tiger Disasters 🐯:</b>\n"
+    reply = "<b>Known genista Disasters 🐯:</b>\n"
     bot = context.bot
     for each_user in TIGERS:
         user_id = int(each_user)
@@ -480,7 +480,7 @@ def tigerlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known Demon Disasters 👹:</b>\n"
+    reply = "<b>Known Delphinium Disasters 👹:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -496,7 +496,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known Dragon Disasters 🐉:</b>\n"
+    reply = "<b>Known Strelizia Disasters :</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -529,10 +529,10 @@ Commands listed here only work for users with special access are mainly used for
 Group admins/group owners do not need these commands. 
 
  ╔ *List all special users:*
- ╠ `/dragons`*:* Lists all Dragon disasters
- ╠ `/demons`*:* Lists all Demon disasters
- ╠ `/tigers`*:* Lists all Tigers disasters
- ╠ `/wolves`*:* Lists all Wolf disasters
+ ╠ `/Strelizias`*:* Lists all Dragon disasters
+ ╠ `/Delphiniums`*:* Lists all Demon disasters
+ ╠ `/Geniatas`*:* Lists all Tigers disasters
+ ╠ `/Argentias`*:* Lists all Wolf disasters
  ╠ `/heroes`*:* Lists all Hero Association members
  ╠ `/adddragon`*:* Adds a user to Dragon
  ╠ `/adddemon`*:* Adds a user to Demon
