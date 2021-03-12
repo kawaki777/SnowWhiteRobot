@@ -61,7 +61,9 @@ You can find my list of available commands with /help.
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a zerotwo who will made your group secure and help admins manage their groups with Anime Sensei! Have a look at the following for an idea of some of the things I can help you with.
+X==========You are not my darling but i will use you to find my darling 😁!========X
+X===========Don't worry you can me your group to secure your group=================X
+============Check my features by typing /help😜====================================X.
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -225,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
+            "I'm online!\n<b>Up i am finding my darling 🧐since:</b> <code>{}</code>".format(uptime) I think you are not my darling,
             parse_mode=ParseMode.HTML)
 
 
