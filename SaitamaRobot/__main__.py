@@ -227,7 +227,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "I'm online!\n<b>Up i am finding my darling 🧐since:</b> <code>{}</code>".format(uptime) I think you are not my darling,
+            "I'm online!\n<b>Up i am finding my darling 🧐since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
 
 
