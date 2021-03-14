@@ -7,7 +7,7 @@ from SaitamaRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
-def truth(update: Update, context: CallbackContext):
+def abuse(update: Update, context: CallbackContext):
     args = context.args
     update.effective_message.reply_text(random.choice(abuse_string.ABUSE))
 
