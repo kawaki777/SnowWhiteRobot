@@ -11,6 +11,6 @@ def truth(update: Update, context: CallbackContext):
     args = context.args
     update.effective_message.reply_text(random.choice(abuse_string.ABUSE))
 
-TRUTH_HANDLER = DisableAbleCommandHandler("abuse", abuse)
+ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 
 dispatcher.add_handler(abuse_HANDLER)
