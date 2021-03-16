@@ -282,7 +282,7 @@ DECIDE = ("Yes.", "No.", "Maybe.")
 TABLE = ("(╯°□°）╯彡 ┻━┻", "I ran out of tables, will order more.",
          "Go do some work instead of flippin tables.")
 
-ABUSE_STRINGS = (
+ABUSE = (
     "Fuck off",
     "Stfu go fuck yourself",
     "you noob",
