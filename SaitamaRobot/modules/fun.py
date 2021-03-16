@@ -168,7 +168,16 @@ def lyrics(update: Update, context: CallbackContext):
     else:
         msg.reply_text(reply)
 
-
+@typing_action
+def abuse(update, context):
+    # reply to correct message
+    reply_text = (
+        update.effective_message.reply_to_message.reply_text
+        if update.effective_message.reply_to_message
+        else update.effective_message.reply_text
+    )
+    reply_text(random.choice(fun.ABUSE_STRINGS))
+    
 @run_async
 def roll(update: Update, context: CallbackContext):
     update.message.reply_text(random.choice(range(1, 7)))
