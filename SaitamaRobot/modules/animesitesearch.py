@@ -12,7 +12,7 @@ info_btn = "More Information"
 kaizoku_btn = "Kaizoku 💓"
 kayo_btn = "Kayo 🏴‍☠️"
 animeacedemy_btn = "AnimeAcedemy 👑"
-codex_btn = "Codex7Anime 👊"
+hsa_btn = "HindiSubbedAnime 👊"
 ast_btn = "AnimeSubbingTeam☠️"
 atf_btn = "ATF Anime 🍿"
 an_btn = "Anime Nagri⚔️⚔️"
@@ -85,8 +85,8 @@ def site_search(update: Update, context: CallbackContext, site: str):
            post_name = html.escape(entry.text.strip())
            result += f"• <a href='{post_link}'>{post_name}</a>\n"
            
-    elif site == "codex":
-        search_url = f"https://www.codexanime7.xyz/?m=1={search_query}"
+    elif site == "hsa":
+        search_url = f"https://www.hindianime.net/search?q={search_query}"
         html_text = requests.get(search_url).text
         soup = bs4.BeautifulSoup(html_text, "html.parser")
         search_result = soup.find_all("h2", {'class': "title"}) 
@@ -225,7 +225,7 @@ def cat(update: Update, context: CallbackContext):
 KAIZOKU_SEARCH_HANDLER = DisableAbleCommandHandler("kaizoku", kaizoku)
 KAYO_SEARCH_HANDLER = DisableAbleCommandHandler("kayo", kayo)
 AAT_SEARCH_HANDLER = DisableAbleCommandHandler("aat", aat)
-CODEX_SEARCH_HANDLER = DisableAbleCommandHandler("codex", codex)
+HSA_SEARCH_HANDLER = DisableAbleCommandHandler("hsa", hsa)
 AST_SEARCH_HANDLER = DisableAbleCommandHandler("ast", ast)
 ATF_SEARCH_HANDLER = DisableAbleCommandHandler("atf", atf)
 AN_SEARCH_HANDLER = DisableAbleCommandHandler("an", an)
@@ -234,11 +234,11 @@ CAT_SEARCH_HANDLER = DisableAbleCommandHandler("cat", cat)
 dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(AAT_SEARCH_HANDLER)
-dispatcher.add_handler(CODEX_SEARCH_HANDLER)
+dispatcher.add_handler(HSA_SEARCH_HANDLER)
 dispatcher.add_handler(AST_SEARCH_HANDLER)
 dispatcher.add_handler(ATF_SEARCH_HANDLER)
 dispatcher.add_handler(AN_SEARCH_HANDLER)
 dispatcher.add_handler(CAT_SEARCH_HANDLER)
 
-__handlers__ = [KAIZOKU_SEARCH_HANDLER, KAYO_SEARCH_HANDLER, AAT_SEARCH_HANDLER,  CODEX_SEARCH_HANDLER,  
+__handlers__ = [KAIZOKU_SEARCH_HANDLER, KAYO_SEARCH_HANDLER, AAT_SEARCH_HANDLER,  HSA_SEARCH_HANDLER,  
                 AST_SEARCH_HANDLER,  ATF_SEARCH_HANDLER, AN_SEARCH_HANDLER, CAT_SEARCH_HANDLER]
