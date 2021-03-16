@@ -291,6 +291,7 @@ __help__ = """
  • `/plet <text> `*:* text get funny emojify
  • `/tts <text> `*:* text to voice
  • `/8ball`*:* predicts using 8ball method
+ • `/abuse*:* gaalia deshi wali
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -306,6 +307,7 @@ DECIDE_HANDLER = DisableAbleCommandHandler("decide", decide)
 EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 LYRICS_HANDLER = DisableAbleCommandHandler("lyrics", lyrics)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
+WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
 
 dispatcher.add_handler(SANITIZE_HANDLER)
