@@ -308,7 +308,7 @@ EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 LYRICS_HANDLER = DisableAbleCommandHandler("lyrics", lyrics)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
-WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
+ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 
 dispatcher.add_handler(SANITIZE_HANDLER)
 dispatcher.add_handler(RUNS_HANDLER)
@@ -324,14 +324,15 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(WEEBIFY_HANDLER)
+dispatcher.add_handler(ABUSE_HANDLER)
 
 __mod_name__ = "Fun"
 __command_list__ = [
     "runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide",
-    "table", "pat", "sanitize", "lyrics", "weebify",
+    "table", "pat", "sanitize", "lyrics", "weebify","abuse",
 ]
 __handlers__ = [
     RUNS_HANDLER, SLAP_HANDLER, PAT_HANDLER, ROLL_HANDLER, TOSS_HANDLER,
     SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER, DECIDE_HANDLER, TABLE_HANDLER,
-    SANITIZE_HANDLER, LYRICS_HANDLER, EIGHTBALL_HANDLER, WEEBIFY_HANDLER
+    SANITIZE_HANDLER, LYRICS_HANDLER, EIGHTBALL_HANDLER, WEEBIFY_HANDLER,ABUSE_HANDLER,
 ]
