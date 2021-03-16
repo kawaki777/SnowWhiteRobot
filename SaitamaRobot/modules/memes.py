@@ -6,11 +6,11 @@ from telegram.ext import Filters, CommandHandler
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown
 
-from Mizuhararobot.modules.helper_funcs.extraction import extract_user
-from Mizuhararobot.modules.helper_funcs.filters import CustomFilters
-from Mizuhararobot.modules.helper_funcs.alternate import typing_action
-from Mizuhararobot import dispatcher, DRAGONS, DEMONS, LOGGER
-from Mizuhararobot.modules.disable import (
+from SaitamaRobot.modules.helper_funcs.extraction import extract_user
+from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
+from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+from SaitamaRobot import dispatcher, DRAGONS, DEMONS, LOGGER
+from SaitamaRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
