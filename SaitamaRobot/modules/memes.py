@@ -15,7 +15,7 @@ from SaitamaRobot.modules.disable import (
     DisableAbleMessageHandler,
 )
 
-import Mizuhararobot.modules.helper_funcs.fun_strings as fun
+import SaitamaRobot.modules.helper_funcs.fun_strings as fun
 
 
 @typing_action
