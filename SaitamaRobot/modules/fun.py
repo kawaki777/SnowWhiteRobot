@@ -186,7 +186,10 @@ def roll(update: Update, context: CallbackContext):
 @run_async
 def toss(update: Update, context: CallbackContext):
     update.message.reply_text(random.choice(fun_strings.TOSS))
-
+    
+@run_async
+def abuse(update: Update, context: CallbackContext):
+    update.message.reply_text(random.choice(fun_strings.ABUSE))
 
 @run_async
 def shrug(update: Update, context: CallbackContext):
