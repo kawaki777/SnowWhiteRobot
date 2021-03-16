@@ -682,7 +682,7 @@ Get information about anime, manga or characters from [AniList](anilist.co).
  - /kaizoku <anime>: search an anime on animekaizoku.com
  - /kayo <anime>: search an anime on animekayo.com
  - /aat <anime>: search an anime on animeacademy.in
- - /hsa <anime>: search an anime on hindianime.net
+ - /codex <anime>: search an anime on codexanime7.xyz
  - /ast <anime>: search an anime on animesubingteam.000webhostapp.com
  - /atf <anime>: search an anime on atfanime.in
  - /an <anime>: search an anime on animenagri.com
