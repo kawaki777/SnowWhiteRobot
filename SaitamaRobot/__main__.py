@@ -59,12 +59,8 @@ X===========Don't worry you can add me your group to secure your group==========
 
 """
 
-HELP_STRINGS = """
-Hey there! My name is *{}*.
-X==========You are not my darling but i will use you to find my darling 😁!========X
-X===========Don't worry you can add me your group to secure your group=================X
-============Check my features by typing /help😜====================================X.
-
+HELP_STRINGS = """.
+THEY ARE MY COMMANDS SEE SERIOUSLY HAHAHA
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
