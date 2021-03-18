@@ -34,7 +34,7 @@ Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.co
 </details>  
 <details>
   <summary>Steps to self Host!! </summary>
-
+# New features added soon
   ## Setting up the bot (Read this before trying to use!):
 Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older Python versions!
 This is because markdown parsing is done by iterating through a dict, which is ordered by default in 3.6.
