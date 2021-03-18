@@ -4,14 +4,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from Cutiepii_Robot import dispatcher, updater
-import Cutiepii_Robot.modules.sql.nsfw_sql as sql
-from Cutiepii_Robot.modules.log_channel import gloggable
+from SaitamaRobot import dispatcher, updater
+import SaitamaRobot.modules.sql.nsfw_sql as sql
+from SaitamaRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from Cutiepii_Robot.modules.helper_funcs.filters import CustomFilters
-from Cutiepii_Robot.modules.helper_funcs.chat_status import user_admin
+from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
+from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
