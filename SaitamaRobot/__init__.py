@@ -9,7 +9,7 @@ import telegram.ext as tg
 
 from telethon import TelegramClient
 from pyrogram import Client, errors
-
+from redis import StrictRedis
 StartTime = time.time()
 
 # enable logging
