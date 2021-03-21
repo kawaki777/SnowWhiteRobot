@@ -235,19 +235,19 @@ def start(update: Update, context: CallbackContext):
                             ),
                             InlineKeyboardButton(
                                 text="🔔 Updates Channel",
-                                url="https://t.me/ZerotwkUpdates",
+                                url="https://t.me/ZerotwoUpdate",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🧾 Getting started guide",
-                                url="https://t.me/Zerotwoupdates",
+                                url="https://t.me/Zerotwoupdate",
                             )
                         ],
                         [
                             InlineKeyboardButton(
                                 text="🗄 Logs",
-                                url="https://t.me/Zerotwologs",
+                                url="https://t.me/Zerotwolog",
                             )
                         ],
                     ]
