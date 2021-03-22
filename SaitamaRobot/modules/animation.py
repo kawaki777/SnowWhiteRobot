@@ -347,6 +347,18 @@ def kill(update: Update, context: CallbackContext):
         time.sleep(EDIT_SLEEP)
     msg.edit_text('⚰')
 
+__help__ = """
+ - /kill: reply to a text or type for this kill animation
+ - /love: reply a text or only type for this love animation
+ - /hack: reply to a text or type for this hack prank
+ - /love: reply a text or only type for this bomb animation
+ - /moonanimation: for moon animation
+ - /clockanimation: reply a text or only type for this clock animation
+ - /blockanimation: reply a text for block animation
+ - /earthanimation: reply a text for earth animation
+"""
+
+__mod_name__ = "Animation"
 
 KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
