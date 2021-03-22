@@ -352,7 +352,7 @@ __help__ = """
  - /love: reply a text or only type for this love animation
  - /hack: reply to a text or type for this hack prank
  - /love: reply a text or only type for this bomb animation
- - /moonanimation: for moon animation
+ - /moonanimation: reply a text for moon animation
  - /clockanimation: reply a text or only type for this clock animation
  - /blockanimation: reply a text for block animation
  - /earthanimation: reply a text for earth animation
