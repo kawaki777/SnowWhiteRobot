@@ -7,7 +7,7 @@
 <a href="https://t.me/ZerotwoSupport" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
 
 ### Bot And Channel 
-* Bot Link:  <a href="https://t.me/Misszero_bot" alt="Zerotwo bot"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-GabiBraunRobot-blue" /> </a>
+* Bot Link:  <a href="https://t.me/Misszero_bot" alt="Zerotwo bot"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-Zerotwobot-pink" /> </a>
 * News channel: <a  href="https://t.me/ZerotwoLog" alt="Gabi Logs"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-zerotwo%20Log%20Channel-9cf" /> </a>
 
 
