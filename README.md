@@ -17,7 +17,3 @@ Feel free to open pull requests should any be missing.
 
 
   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/majid-nex/002.git)
-
-## Credits 📍
-* Well, it's all in the commit history 
-Feel free to open pull requests should any be missing.
