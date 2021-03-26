@@ -2,8 +2,7 @@ from telethon import events
 from SaitamaRobot import telethn
 
 """Triggers start command in pm and in groupchats"""
-def igris
-bot(**args):
+def igrisbot(**args):
     """New message."""
     pattern = args.get('pattern', None)
     r_pattern = r'^[/!]'
