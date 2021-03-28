@@ -39,14 +39,7 @@ def gps(bot: Bot, update: Update, args: List[str]):
         bot.send_location(chat_id, location=the_loc)
         update.message.reply_text("Open with: [Google Maps]({})".format(gm), parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     except AttributeError:
-        update.message.reply_text("I can't find that")
-
-
- __help__ = """
- - /gps <location>: get gps location 
- """
-
- __mod_name__ = "GPS"
+        update.message.reply_text("I can't find that"
 
  GPS_HANDLER = DisableAbleCommandHandler("gps", gps, pass_args=True)
 
