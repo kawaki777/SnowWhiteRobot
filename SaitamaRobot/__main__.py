@@ -5,14 +5,14 @@ import re
 from sys import argv
 from typing import Optional
 
-from SnowWhiteRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from SaitamaRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           dispatcher, StartTime, telethn, updater, pgram)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from SnowWhiteRobot.modules import ALL_MODULES
-from SnowWhiteRobot.modules.helper_funcs.chat_status import is_user_admin
-from SnowWhiteRobot.modules.helper_funcs.misc import paginate_modules
+from SaitamaRobot.modules import ALL_MODULES
+from SaitamaRobot.modules.helper_funcs.chat_status import is_user_admin
+from SaitamaRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
