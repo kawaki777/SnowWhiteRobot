@@ -3,16 +3,18 @@ import io
 import os
 import time
 
+import lyricsgenius
 import requests
+import wget
 from pyrogram import filters
 from pyrogram.types import Message
 from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from SaitamaRobot.conf import get_str_key
-from SaitamaRobot.pyrogramee.pluginshelper import get_text, progress
-from SaitamaRobot import pbot
+from YoneRobot.conf import get_str_key
+from YoneRobot.pyrogramee.pluginshelper import get_text, progress
+from YoneRobot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
