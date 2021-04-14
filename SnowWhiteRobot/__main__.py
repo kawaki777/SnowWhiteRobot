@@ -12,7 +12,7 @@ from SnowWhiteRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from SnowWhiteRobot.modules import ALL_MODULES
 from SnowWhiteRobot.modules.helper_funcs.chat_status import is_user_admin
-from SnowWhiteRobot.modules.helper_funcs.misc import paginate_modules
+from .modules.helper_funcs.misc import paginate_modules
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
