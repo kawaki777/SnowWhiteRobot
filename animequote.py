@@ -1,7 +1,7 @@
 import html
 import random
-import SaitamaRobot.modules.animequote_string as animequote_string
-from SaitamaRobot import dispatcher
+import SnowWhiteRoBot.modules.animequote_string as animequote_string
+from SnowWhiteRoBot import dispatcher
 from telegram import ParseMode, Update, Bot
 from SaitamaRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
