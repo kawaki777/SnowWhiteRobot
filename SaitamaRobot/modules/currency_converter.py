@@ -1,5 +1,5 @@
 import requests
-from SaitamaRobot import CASH_API_KEY, dispatcher
+from SnowWhiteRobot import CASH_API_KEY, dispatcher
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
@@ -52,3 +52,4 @@ dispatcher.add_handler(CONVERTER_HANDLER)
 
 __command_list__ = ["cash"]
 __handlers__ = [CONVERTER_HANDLER]
+

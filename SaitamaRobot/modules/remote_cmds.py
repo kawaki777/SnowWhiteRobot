@@ -1,8 +1,8 @@
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.helper_funcs.chat_status import (
     bot_admin, is_bot_admin, is_user_ban_protected, is_user_in_chat)
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
+from SnowWhiteRobot.modules.helper_funcs.extraction import extract_user_and_text
+from SnowWhiteRobot.modules.helper_funcs.filters import CustomFilters
 from telegram import Update, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -470,3 +470,4 @@ dispatcher.add_handler(RUNBAN_HANDLER)
 dispatcher.add_handler(RKICK_HANDLER)
 dispatcher.add_handler(RMUTE_HANDLER)
 dispatcher.add_handler(RUNMUTE_HANDLER)
+

@@ -6,7 +6,7 @@ from jikanpy.exceptions import APIException
 from telegram import Message, Chat, User, ParseMode, Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 
-from SaitamaRobot import dispatcher
+from SnowWhiteRobot import dispatcher
 
 jikan = Jikan()
 
@@ -204,3 +204,4 @@ dispatcher.add_handler(ANIME_HANDLER)
 dispatcher.add_handler(CHARACTER_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 dispatcher.add_handler(MANGA_HANDLER)
+

@@ -4,21 +4,21 @@ import re
 import time
 from functools import partial
 
-import SaitamaRobot.modules.sql.welcome_sql as sql
-from SaitamaRobot import (DEV_USERS, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
+import SnowWhiteRobot.modules.sql.welcome_sql as sql
+from SnowWhiteRobot import (DEV_USERS, LOGGER, OWNER_ID, DRAGONS, DEMONS, TIGERS,
                           WOLVES, sw, dispatcher, JOIN_LOGGER)
-from SaitamaRobot.modules.helper_funcs.chat_status import (
+from SnowWhiteRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from SaitamaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from SaitamaRobot.modules.helper_funcs.msg_types import get_welcome_type
-from SaitamaRobot.modules.helper_funcs.string_handling import (
+from SnowWhiteRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from SnowWhiteRobot.modules.helper_funcs.msg_types import get_welcome_type
+from SnowWhiteRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from SnowWhiteRobot.modules.log_channel import loggable
+from SnowWhiteRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -177,7 +177,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oh, My darling😈 come here? STAY ALERT!.",
+                    "Let's Falco, We get our revenge and fight!",
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
@@ -187,7 +187,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "Whoa! A member of the Zerotwo support just joined!",
+                    "Whoa! A powerful friend of Gabi just joined, Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -195,7 +195,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Huh! A STRELIZIA LEVEL FRANXX JUST JOINED! Stay Alert!",
+                    "Huh! A Giant Sized(40m+) Titan just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -203,7 +203,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_text(
-                    "Huh! Someone with a DELPHINIUM LEVEL FRANXX just joined!",
+                    "Huh! Someone Mid-Sized(20m+) Titan just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -211,14 +211,14 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_text(
-                    "Oof! A GENISTA LEVEL FRANXX just joined!",
+                    "Oof! A Small-Sized(10m+) Titan just joined!",
                     reply_to_message_id=reply)
                 continue
 
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_text(
-                    "Oof! A ARGENTIA LEVEL FRANXX just joined!",
+                    "Oof! A Newbie Warrior just joined!",
                     reply_to_message_id=reply)
                 continue
 
@@ -489,13 +489,13 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_text(
-                    "Oi! hiro! He left..", reply_to_message_id=reply)
+                    "Oi! Falco! He left..", reply_to_message_id=reply)
                 return
 
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 update.effective_message.reply_text(
-                    "See you later at the our room!",
+                    "See you later at the Hero's Association!",
                     reply_to_message_id=reply,
                 )
                 return
@@ -1084,3 +1084,4 @@ __handlers__ = [
     BUTTON_VERIFY_HANDLER,
     WELCOME_MUTE_HELP,
 ]
+

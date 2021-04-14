@@ -1,6 +1,6 @@
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
@@ -481,7 +481,6 @@ def lined(update, context):
     else:
         message.reply_text(string)
 __help__ = """
-
  - /weebify <text>: weebify your text!
  - /bubble <text>: bubble your text!
  - /fbubble <text>: bubble-filled your text!
@@ -490,7 +489,6 @@ __help__ = """
  - /blue <text>: bluify your text!
  - /latin <text>: latinify your text!
  - /lined <text>: lined your text!
-
 """
 __mod_name__ = "StyleText"
 
@@ -528,3 +526,4 @@ __handlers__ = [FSQUARE_HANDLER]
 __handlers__ = [BLUE_HANDLER]
 __handlers__ = [LATIN_HANDLER]
 __handlers__ = [LINED_HANDLER]
+

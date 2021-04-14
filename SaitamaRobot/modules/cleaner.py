@@ -1,11 +1,11 @@
 import html
 
-from SaitamaRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import (bot_can_delete,
+from SnowWhiteRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot.modules.helper_funcs.chat_status import (bot_can_delete,
                                                            connection_status,
                                                            dev_plus, user_admin)
-from SaitamaRobot.modules.sql import cleaner_sql as sql
+from SnowWhiteRobot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)

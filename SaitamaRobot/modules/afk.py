@@ -6,14 +6,14 @@ from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, run_async
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from SaitamaRobot.modules.sql.afk_redis import start_afk, end_afk, is_user_afk, afk_reason
-from SaitamaRobot import REDIS
-from SaitamaRobot.modules.users import get_user_id
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from SnowWhiteRobot.modules.sql.afk_redis import start_afk, end_afk, is_user_afk, afk_reason
+from SnowWhiteRobot import REDIS
+from SnowWhiteRobot.modules.users import get_user_id
 
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.readable_time import get_readable_time
+from SnowWhiteRobot.modules.helper_funcs.alternate import send_message
+from SnowWhiteRobot.modules.helper_funcs.readable_time import get_readable_time
 
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
@@ -167,3 +167,4 @@ dispatcher.add_handler(AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
+

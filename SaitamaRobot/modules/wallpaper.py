@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from SaitamaRobot import SUPPORT_CHAT, WALL_API, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot import SUPPORT_CHAT, WALL_API, dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
@@ -55,3 +55,4 @@ def wall(update: Update, context: CallbackContext):
 
 WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall)
 dispatcher.add_handler(WALLPAPER_HANDLER)
+

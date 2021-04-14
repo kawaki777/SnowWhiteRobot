@@ -1,9 +1,9 @@
 from typing import Optional
 
-import SaitamaRobot.modules.sql.rules_sql as sql
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
-from SaitamaRobot.modules.helper_funcs.string_handling import markdown_parser
+import SnowWhiteRobot.modules.sql.rules_sql as sql
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.helper_funcs.chat_status import user_admin
+from SnowWhiteRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, Message,
                       ParseMode, Update, User)
 from telegram.error import BadRequest
@@ -124,3 +124,4 @@ RESET_RULES_HANDLER = CommandHandler(
 dispatcher.add_handler(GET_RULES_HANDLER)
 dispatcher.add_handler(SET_RULES_HANDLER)
 dispatcher.add_handler(RESET_RULES_HANDLER)
+

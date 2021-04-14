@@ -1,18 +1,18 @@
 import html
 from typing import Optional
 
-import SaitamaRobot.modules.sql.blsticker_sql as sql
-from SaitamaRobot import LOGGER, dispatcher
-from SaitamaRobot.modules.connection import connected
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message
-from SaitamaRobot.modules.helper_funcs.chat_status import (user_admin,
+import SnowWhiteRobot.modules.sql.blsticker_sql as sql
+from SnowWhiteRobot import LOGGER, dispatcher
+from SnowWhiteRobot.modules.connection import connected
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot.modules.helper_funcs.alternate import send_message
+from SnowWhiteRobot.modules.helper_funcs.chat_status import (user_admin,
                                                            user_not_admin)
-from SaitamaRobot.modules.helper_funcs.misc import split_message
-from SaitamaRobot.modules.helper_funcs.string_handling import extract_time
+from SnowWhiteRobot.modules.helper_funcs.misc import split_message
+from SnowWhiteRobot.modules.helper_funcs.string_handling import extract_time
 
-from SaitamaRobot.modules.log_channel import loggable
-from SaitamaRobot.modules.warns import warn
+from SnowWhiteRobot.modules.log_channel import loggable
+from SnowWhiteRobot.modules.warns import warn
 from telegram import (Chat, Message, ParseMode, Update, User, ChatPermissions)
 from telegram.error import BadRequest
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
@@ -494,3 +494,4 @@ dispatcher.add_handler(ADDBLACKLIST_STICKER_HANDLER)
 dispatcher.add_handler(UNBLACKLIST_STICKER_HANDLER)
 dispatcher.add_handler(BLACKLISTMODE_HANDLER)
 dispatcher.add_handler(BLACKLIST_STICKER_DEL_HANDLER)
+

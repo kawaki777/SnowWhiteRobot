@@ -3,8 +3,8 @@ from google_trans_new import LANGUAGES, google_translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -103,3 +103,4 @@ dispatcher.add_handler(TRANSLATE_HANDLER)
 __mod_name__ = "Translator"
 __command_list__ = ["tr", "tl"]
 __handlers__ = [TRANSLATE_HANDLER]
+

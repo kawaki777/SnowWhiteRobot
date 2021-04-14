@@ -8,12 +8,12 @@ from telegram.ext import CallbackContext, run_async
 from tswift import Song
 from telegram.error import BadRequest
 
-import SaitamaRobot.modules.fun_strings as fun_strings
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SaitamaRobot.modules.helper_funcs.chat_status import (is_user_admin)
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
+import SnowWhiteRobot.modules.fun_strings as fun_strings
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot.modules.helper_funcs.alternate import send_message, typing_action
+from SnowWhiteRobot.modules.helper_funcs.chat_status import (is_user_admin)
+from SnowWhiteRobot.modules.helper_funcs.extraction import extract_user
 
 GIF_ID = 'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE'
 
@@ -168,16 +168,7 @@ def lyrics(update: Update, context: CallbackContext):
     else:
         msg.reply_text(reply)
 
-@typing_action
-def abuse(update, context):
-    # reply to correct message
-    reply_text = (
-        update.effective_message.reply_to_message.reply_text
-        if update.effective_message.reply_to_message
-        else update.effective_message.reply_text
-    )
-    reply_text(random.choice(fun.ABUSE_STRINGS))
-    
+
 @run_async
 def roll(update: Update, context: CallbackContext):
     update.message.reply_text(random.choice(range(1, 7)))
@@ -186,10 +177,7 @@ def roll(update: Update, context: CallbackContext):
 @run_async
 def toss(update: Update, context: CallbackContext):
     update.message.reply_text(random.choice(fun_strings.TOSS))
-    
-@run_async
-def abuse(update: Update, context: CallbackContext):
-    update.message.reply_text(random.choice(fun_strings.ABUSE))
+
 
 @run_async
 def shrug(update: Update, context: CallbackContext):
@@ -291,7 +279,6 @@ __help__ = """
  • `/plet <text> `*:* text get funny emojify
  • `/tts <text> `*:* text to voice
  • `/8ball`*:* predicts using 8ball method
- • `/abuse*:* gaalia deshi wali
 """
 
 SANITIZE_HANDLER = DisableAbleCommandHandler("sanitize", sanitize)
@@ -308,7 +295,6 @@ EIGHTBALL_HANDLER = DisableAbleCommandHandler("8ball", eightball)
 LYRICS_HANDLER = DisableAbleCommandHandler("lyrics", lyrics)
 TABLE_HANDLER = DisableAbleCommandHandler("table", table)
 WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
-ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 
 dispatcher.add_handler(SANITIZE_HANDLER)
 dispatcher.add_handler(RUNS_HANDLER)
@@ -324,15 +310,15 @@ dispatcher.add_handler(RLG_HANDLER)
 dispatcher.add_handler(DECIDE_HANDLER)
 dispatcher.add_handler(TABLE_HANDLER)
 dispatcher.add_handler(WEEBIFY_HANDLER)
-dispatcher.add_handler(ABUSE_HANDLER)
 
 __mod_name__ = "Fun"
 __command_list__ = [
     "runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide",
-    "table", "pat", "sanitize", "lyrics", "weebify","abuse",
+    "table", "pat", "sanitize", "lyrics", "weebify",
 ]
 __handlers__ = [
     RUNS_HANDLER, SLAP_HANDLER, PAT_HANDLER, ROLL_HANDLER, TOSS_HANDLER,
     SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER, DECIDE_HANDLER, TABLE_HANDLER,
-    SANITIZE_HANDLER, LYRICS_HANDLER, EIGHTBALL_HANDLER, WEEBIFY_HANDLER,ABUSE_HANDLER,
+    SANITIZE_HANDLER, LYRICS_HANDLER, EIGHTBALL_HANDLER, WEEBIFY_HANDLER
 ]
+

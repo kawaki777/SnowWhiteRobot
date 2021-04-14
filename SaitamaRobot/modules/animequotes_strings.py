@@ -66,3 +66,4 @@ QUOTES_IMG = (
       "https://i.imgur.com/6lG4tsO.jpg"
       
       ) 
+
