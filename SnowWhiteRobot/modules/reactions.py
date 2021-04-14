@@ -1,7 +1,7 @@
 import random
 
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
@@ -65,3 +65,4 @@ dispatcher.add_handler(REACT_HANDLER)
 
 __command_list__ = ["react"]
 __handlers__ = [REACT_HANDLER]
+

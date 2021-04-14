@@ -14,18 +14,18 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from SaitamaRobot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
+from SnowWhiteRobot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
                           INFOPIC, dispatcher, sw)
-from SaitamaRobot.__main__ import STATS, TOKEN, USER_INFO
-import SaitamaRobot.modules.sql.userinfo_sql as sql
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from SaitamaRobot.modules.sql.afk_redis import is_user_afk, afk_reason
-from SaitamaRobot.modules.sql.users_sql import get_user_num_chats
-from SaitamaRobot.modules.sql.feds_sql import get_user_fbanlist
-from SaitamaRobot.modules.helper_funcs.chat_status import sudo_plus
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
-from SaitamaRobot import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
+from SnowWhiteRobot.__main__ import STATS, TOKEN, USER_INFO
+import SnowWhiteRobot.modules.sql.userinfo_sql as sql
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot.modules.sql.global_bans_sql import is_user_gbanned
+from SnowWhiteRobot.modules.sql.afk_redis import is_user_afk, afk_reason
+from SnowWhiteRobot.modules.sql.users_sql import get_user_num_chats
+from SnowWhiteRobot.modules.sql.feds_sql import get_user_fbanlist
+from SnowWhiteRobot.modules.helper_funcs.chat_status import sudo_plus
+from SnowWhiteRobot.modules.helper_funcs.extraction import extract_user
+from SnowWhiteRobot import telethn as SaitamaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -275,7 +275,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'God'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Bot Lab'."
+        text += "\n\nThis user is Gabi's 'Frined'."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\nThe Disaster level of this person is 'Dragon'."
@@ -291,7 +291,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/zerotwosupport">?</a>]'.format(
+        text += ' [<a href="https://t.me/Gabi_Support_Log/9">?</a>]'.format(
             bot.username)
 
     try:
@@ -461,7 +461,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust zerotwo to set my bio.")
+                "Erm... yeah, I only trust Sensei Association to set my bio.")
             return
 
         text = message.text
@@ -514,7 +514,7 @@ Examples:
  • `/info`*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/zerotwosupport)
+ Come and see [HP System explained](https://t.me/Gabi_Support_Log/9)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
@@ -543,3 +543,4 @@ __handlers__ = [
     ID_HANDLER, GIFID_HANDLER, INFO_HANDLER, SET_BIO_HANDLER, GET_BIO_HANDLER,
     SET_ABOUT_HANDLER, GET_ABOUT_HANDLER, STATS_HANDLER
 ]
+

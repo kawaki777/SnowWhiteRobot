@@ -1,7 +1,7 @@
 import speedtest
-from SaitamaRobot import DEV_USERS, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus
+from SnowWhiteRobot import DEV_USERS, dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
@@ -60,3 +60,4 @@ dispatcher.add_handler(SPEED_TEST_CALLBACKHANDLER)
 __mod_name__ = "SpeedTest"
 __command_list__ = ["speedtest"]
 __handlers__ = [SPEED_TEST_HANDLER, SPEED_TEST_CALLBACKHANDLER]
+

@@ -1,3 +1,4 @@
+
 import datetime
 import html
 import textwrap
@@ -6,8 +7,8 @@ import bs4
 import jikanpy
 import requests
 from telegram.utils.helpers import mention_html
-from SaitamaRobot import OWNER_ID, DRAGONS, REDIS, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot import OWNER_ID, DRAGONS, REDIS, dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
@@ -682,7 +683,7 @@ Get information about anime, manga or characters from [AniList](anilist.co).
  - /kaizoku <anime>: search an anime on animekaizoku.com
  - /kayo <anime>: search an anime on animekayo.com
  - /aat <anime>: search an anime on animeacademy.in
- - /codex <anime>: search an anime on codexanime7.xyz
+ - /hsa <anime>: search an anime on hindianime.net
  - /ast <anime>: search an anime on animesubingteam.000webhostapp.com
  - /atf <anime>: search an anime on atfanime.in
  - /an <anime>: search an anime on animenagri.com

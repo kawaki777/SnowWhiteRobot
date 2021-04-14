@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import SaitamaRobot.modules.sql.notes_sql as sql
-from SaitamaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
-from SaitamaRobot.__main__ import DATA_IMPORT
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+import SnowWhiteRobot.modules.sql.notes_sql as sql
+from SnowWhiteRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
+from SnowWhiteRobot.__main__ import DATA_IMPORT
+from SnowWhiteRobot.modules.helper_funcs.chat_status import user_admin
+from SnowWhiteRobot.modules.helper_funcs.alternate import typing_action
 
-# from SaitamaRobot.modules.rules import get_rules
-import SaitamaRobot.modules.sql.rules_sql as rulessql
+# from SnowWhiteRobot.modules.rules import get_rules
+import SnowWhiteRobot.modules.sql.rules_sql as rulessql
 
-# from SaitamaRobot.modules.sql import warns_sql as warnssql
-import SaitamaRobot.modules.sql.blacklist_sql as blacklistsql
-from SaitamaRobot.modules.sql import disable_sql as disabledsql
+# from SnowWhiteRobot.modules.sql import warns_sql as warnssql
+import SnowWhiteRobot.modules.sql.blacklist_sql as blacklistsql
+from SnowWhiteRobot.modules.sql import disable_sql as disabledsql
 
-# from SaitamaRobot.modules.sql import cust_filters_sql as filtersql
-# import SaitamaRobot.modules.sql.welcome_sql as welcsql
-import SaitamaRobot.modules.sql.locks_sql as locksql
-from SaitamaRobot.modules.connection import connected
+# from SnowWhiteRobot.modules.sql import cust_filters_sql as filtersql
+# import SnowWhiteRobot.modules.sql.welcome_sql as welcsql
+import SnowWhiteRobot.modules.sql.locks_sql as locksql
+from SnowWhiteRobot.modules.connection import connected
 
 
 @run_async
@@ -380,3 +380,4 @@ EXPORT_HANDLER = CommandHandler("export", export_data, pass_chat_data=True)
 
 dispatcher.add_handler(IMPORT_HANDLER)
 dispatcher.add_handler(EXPORT_HANDLER)
+

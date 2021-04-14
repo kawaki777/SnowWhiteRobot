@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from SaitamaRobot import telethn
-from SaitamaRobot.modules.helper_funcs.telethn.chatstatus import (
+from SnowWhiteRobot import telethn
+from SnowWhiteRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages, user_is_admin)
 
 
@@ -87,3 +87,4 @@ telethn.add_event_handler(*DEL_HANDLER)
 __mod_name__ = "Purges"
 __command_list__ = ["del", "purge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER]
+

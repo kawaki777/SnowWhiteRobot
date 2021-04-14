@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from SaitamaRobot import StartTime, dispatcher
-from SaitamaRobot.modules.helper_funcs.chat_status import sudo_plus
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot import StartTime, dispatcher
+from SnowWhiteRobot.modules.helper_funcs.chat_status import sudo_plus
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
@@ -110,3 +110,4 @@ dispatcher.add_handler(PINGALL_HANDLER)
 
 __command_list__ = ["ping", "pingall"]
 __handlers__ = [PING_HANDLER, PINGALL_HANDLER]
+

@@ -1,6 +1,6 @@
 import requests
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot import dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
@@ -24,3 +24,4 @@ dispatcher.add_handler(UD_HANDLER)
 
 __command_list__ = ["ud"]
 __handlers__ = [UD_HANDLER]
+

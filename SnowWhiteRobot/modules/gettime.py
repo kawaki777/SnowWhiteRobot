@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from SaitamaRobot import TIME_API_KEY, dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SnowWhiteRobot import TIME_API_KEY, dispatcher
+from SnowWhiteRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
@@ -103,3 +103,4 @@ dispatcher.add_handler(TIME_HANDLER)
 __mod_name__ = "Time"
 __command_list__ = ["time"]
 __handlers__ = [TIME_HANDLER]
+

@@ -1,7 +1,7 @@
 import subprocess
 
-from SaitamaRobot import LOGGER, dispatcher
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus
+from SnowWhiteRobot import LOGGER, dispatcher
+from SnowWhiteRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
@@ -46,3 +46,4 @@ dispatcher.add_handler(SHELL_HANDLER)
 __mod_name__ = "Shell"
 __command_list__ = ['sh']
 __handlers__ = [SHELL_HANDLER]
+
