@@ -6,9 +6,9 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 
-from SaitamaRobot import dispatcher, DRAGONS, OWNER_USERNAME, OWNER_ID
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
-from SaitamaRobot.modules.helper_funcs.chat_status import bot_admin
+from SnowWhiteRobot import dispatcher, DRAGONS, OWNER_USERNAME, OWNER_ID
+from SnowWhiteRobot.modules.helper_funcs.extraction import extract_user
+from SnowWhiteRobot.modules.helper_funcs.chat_status import bot_admin
 
 
 @bot_admin
