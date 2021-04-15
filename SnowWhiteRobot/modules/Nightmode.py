@@ -1,10 +1,10 @@
-from SaitamaRobot.modules.sql.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from SnowWhiteRobot.modules.sql.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
 from telethon import types
-from SaitamaRobot.events import register
-from SaitamaRobot import telethn as tbot
+from SnowWhiteRobot.events import register
+from SnowWhiteRobot import telethn as tbot
 import os
 
 
