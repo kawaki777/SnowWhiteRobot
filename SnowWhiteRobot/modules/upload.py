@@ -7,9 +7,9 @@ import traceback
 import aiohttp
 from telethon import events
 
-from SaitamaRobot import telethn as bot
-from SaitamaRobot.modules.urluploader import download_file
-from SaitamaRobot.utils.uputils import humanbytes, progress
+from SnowWhiteRobot import telethn as bot
+from SnowWhiteRobot.modules.urluploader import download_file
+from SnowWhiteRobot.utils.uputils import humanbytes, progress
 
 DOWNLOADPATH = "Downloads/"
 
