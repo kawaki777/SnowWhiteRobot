@@ -1,5 +1,5 @@
 {
-      "name": "SnowWhiteRoBot",
+      "name": "SnowWhiteRobot",
       "description": "An Anime themed Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -9,7 +9,7 @@
          "SnowWhite"
       ],   
   "logo":    "https://telegra.ph/file/55965d0c865e9a9764930.jpg",
- "repository": "https://github.com/HuntingBots/SnowWhiteRoBot",
+ "repository": "https://github.com/HuntingBots/SnowWhiteRobot",
    "addons": [
       {
          "options": {
