@@ -8,8 +8,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from SaitamaRobot import telethn
-from SaitamaRobot.events import register
+from SnowWhiteRobot import telethn
+from SnowWhiteRobot.events import register
 
 
 async def is_register_admin(chat, user):
