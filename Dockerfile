@@ -64,11 +64,11 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/SnowWhiteRobot
-RUN git clone -b shikhna https://github.com/HuntingBots/SnowWhiteRoBot /root/SnowWhiteRoBot
-WORKDIR /root/SnowWhiteRoBot
+# Copy Python Requirements to /root/snowwhiterobot
+RUN git clone -b shikhna https://github.com/HuntingBots/SnowWhiteRobot /root/SnowWhiteRobot
+WORKDIR /root/SnowWhiteRobot
 
-#Copy config file to /root/SnowWhiteRoBot/SnowWhiteRoBot
+#Copy config file to /root/SnowWhiteRoBot/SnowWhiteRobot
 COPY ./SnowWhiteRoBot/sample_config.py ./SnowWhiteRoBot/config.py* /root/SnowWhiteRoBot/SnowWhiteRoBot/
 
 ENV PATH="/home/bot/bin:$PATH"
