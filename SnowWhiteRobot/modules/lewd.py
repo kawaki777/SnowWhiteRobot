@@ -4,9 +4,9 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from SaitamaRobot import dispatcher, updater
-import SaitamaRobot.modules.sql.nsfw_sql as sql
-from SaitamaRobot.modules.log_channel import gloggable
+from SnowWhiteRobot import dispatcher, updater
+import SnowWhiteRobot.modules.sql.nsfw_sql as sql
+from SnowWhiteRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
