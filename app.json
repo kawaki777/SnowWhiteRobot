@@ -68,6 +68,7 @@
          "required": true,
          "value": "-xyz"
       },
+
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
@@ -82,7 +83,8 @@
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
          "value": ""
-      }, 
+      },
+ 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
          "value": "True"
@@ -97,6 +99,11 @@
          "required": false,
          "value": "1606221784"
       },
+
+      "REDIS_URL": {
+         "description": "Get API_ID from my.telegram.org, used for run your bot modules.",
+         "required": true,
+         "value": ""
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
