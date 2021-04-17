@@ -46,3 +46,5 @@ tgcrypto
 hachoir
 configparser
 html2text
+bing_image_downloader
+apscheduler
