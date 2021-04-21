@@ -3,9 +3,9 @@ import io
 import os
 import time
 
-import lyricsgenius
+import SnowWhiteRobot
 import requests
-import wget
+import SnowWhiteRobot
 from pyrogram import filters
 from pyrogram.types import Message
 from tswift import Song
