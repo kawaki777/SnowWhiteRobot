@@ -5,7 +5,7 @@ from sqlalchemy import Column, String, UnicodeText
 
 
 class BlacklistUsers(BASE):
-    __tablename__ = "blacklistusers"
+    __tablename__ = "blacklistusers1"
     user_id = Column(String(14), primary_key=True)
     reason = Column(UnicodeText)
 
