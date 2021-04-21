@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from YoneRobot.conf import get_str_key
-from YoneRobot.pyrogramee.pluginshelper import get_text, progress
-from YoneRobot import pbot
+from SnowWhiteRobot.conf import get_str_key
+from SnowWhiteRobot.pyrogramee.pluginshelper import get_text, progress
+from SnowWhiteRobot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
