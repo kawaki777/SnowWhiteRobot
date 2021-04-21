@@ -41,7 +41,6 @@ youtube-dl
 youtube_search_python
 youtube_search
 asyncio
-datepar
 pySmartDL
 pytz
 validators
