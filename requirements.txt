@@ -37,7 +37,11 @@ pyrate-limiter
 gtts
 nekos.py
 pybase64
-youtube_dl
+youtube-dl
+youtube_search_python
+youtube_search
+asyncio
+datepar
 pySmartDL
 pytz
 validators
