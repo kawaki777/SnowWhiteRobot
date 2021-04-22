@@ -1,3 +1,4 @@
+# Thanks to @p_rinc_e
 from pathlib import Path
 import asyncio, time, io, math, os, logging, asyncio, shutil, re, subprocess, json
 from re import findall
@@ -12,7 +13,8 @@ from base64 import b64decode
 from pySmartDL import SmartDL
 from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 from telethon import events
-from SnowWhiteRobot.snowwhitebot import snowwhite
+
+from SnowWhiteRobot.events import register
 from SnowWhiteRobot.utils import progress
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
@@ -38,7 +40,7 @@ except:
 	from youtubesearchpython import SearchVideos 
 	pass
 
-@layla(pattern="^/song (.*)")
+@register(pattern="^/song (.*)")
 async def download_video(v_url):
 
     lazy = v_url ; sender = await lazy.get_sender() ; me = await lazy.client.get_me()
@@ -125,7 +127,7 @@ async def download_video(v_url):
         return
     c_time = time.time()
     if song:
-        await rkp.edit(f"Sending the song...`\
+        await rkp.edit(f"`Preparing to upload song:`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
@@ -143,7 +145,7 @@ async def download_video(v_url):
                          f"{rip_data['title']}.mp3")))
         os.remove(f"{rip_data['id']}.mp3")
     elif video:
-        await rkp.edit(f"`Sending the song... `\
+        await rkp.edit(f"`Preparing to upload song :`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
@@ -158,7 +160,7 @@ async def download_video(v_url):
         os.remove(f"{rip_data['id']}.mp4")
 
 
-@layla(pattern="^/video (.*)")
+@register(pattern="^/video (.*)")
 async def download_video(v_url):  
     lazy = v_url ; sender = await lazy.get_sender() ; me = await lazy.client.get_me()
     if not sender.id == me.id:
@@ -240,7 +242,7 @@ async def download_video(v_url):
         return
     c_time = time.time()
     if song:
-        await rkp.edit(f"`Sending the video song...`\
+        await rkp.edit(f"`Preparing to upload song `\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
@@ -273,3 +275,13 @@ async def download_video(v_url):
                          f"{rip_data['title']}.mp4")))
         os.remove(f"{rip_data['id']}.mp4")
         await rkp.delete()
+
+
+__help__ = """
+ ➩ /song <songname artist(optional)>: uploads the song in it's best quality available
+
+ ➩ /video <songname artist(optional)>: uploads the video song in it's best quality available
+"""
+
+__mod_name__ = "SONGS"
+
