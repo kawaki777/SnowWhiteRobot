@@ -54,7 +54,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+Build by The Ghost Hunter for Entertainment groups, I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
 
@@ -82,7 +82,7 @@ SAITAMA_IMG = "https://telegra.ph/file/c54190bb3556f4a47d238.jpg"
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+There are two ways of supporting him; [Owner](https://t.me/The_Ghost_Hunter)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
