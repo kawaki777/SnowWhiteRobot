@@ -14,7 +14,7 @@
       {
     "options": {
     "version": "12"
-    "success_url":
+    "success_url"
   "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
