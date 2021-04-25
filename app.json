@@ -12,9 +12,9 @@
  "repository": "https://github.com/HuntingBots/SnowWhiteRobot",
    "addons": [
       {
-         "options": {
-            "version": "12"
-           "buildpacks": [
+    "options": {
+    "version": "12"
+    "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
    },
