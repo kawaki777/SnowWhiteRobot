@@ -56,7 +56,7 @@ Snowwhite_IMG = "https://telegra.ph/file/c30652f178eaa054104cb.jpg"
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am powerful  group management bot.
-Build by *The Ghost Hunter* for Your Telegram Group , I specialize in managing Entertainment type groups.
+Build by The Ghost Hunter for Your Telegram Group , I specialize in managing Entertainment type groups.
 You can find my list of available commands with /help.
 """
 
