@@ -10,7 +10,7 @@
       ],   
   "logo":    "https://telegra.ph/file/55965d0c865e9a9764930.jpg",
  "repository": "https://github.com/HuntingBots/SnowWhiteRobot",
-   buildpacks": [
+  "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
    },
