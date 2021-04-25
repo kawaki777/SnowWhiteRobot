@@ -13,8 +13,9 @@
    "addons": [
       {
     "options": {
-    "version": "12
-    "buildpacks": [
+    "version": "12"
+    "success_url" : "t.me/helpcenterbotloges",
+  "buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
    },
