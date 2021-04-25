@@ -10,19 +10,18 @@
       ],   
   "logo":    "https://telegra.ph/file/55965d0c865e9a9764930.jpg",
  "repository": "https://github.com/HuntingBots/SnowWhiteRobot",
-   "addons": [
-      {
-    "options": {
-    "version": "12"
-    "success_url"
-  "buildpacks": [
+   buildpacks": [
    {
      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-   },
-   {
-     "url": "heroku/python"
-   }
-    ],   
+  
+"addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
    "env": {
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
