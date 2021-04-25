@@ -77,8 +77,6 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-Snowwhite_IMG = "https://telegra.ph/file/c30652f178eaa054104cb.jpg"
-
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
@@ -191,7 +189,8 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-              SNOWWHITE_IMG,
+              Snowwhite_IMG = "https://telegra.ph/file/c30652f178eaa054104cb.jpg"
+,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
