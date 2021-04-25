@@ -50,19 +50,17 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-Snowwhite_IMG = "https://telegra.ph/file/c30652f178eaa054104cb.jpg"
-
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am powerful  group management bot.
-Build by The Ghost Hunter for Your Telegram Group , I specialize in managing Entertainment type groups.
+I am an Anime themed group management bot.
+Build by weebs for weebs, I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a powerful group manager bot and help admins for manage their groups with Some Powerful ! Have a look at the following for an idea of some of \
+I'm a Eldian and help admins manage their groups with Some Powerful Titans! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -79,10 +77,12 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
+SAITAMA_IMG = "https://telegra.ph/file/c54190bb3556f4a47d238.jpg"
+
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [Telegram](https://t.me/The_Ghost_Hunter)."""
+There are two ways of supporting him; [PayPal](paypal.me/), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -191,7 +191,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-              SnowWhite_IMG, 
+                SAITAMA_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
