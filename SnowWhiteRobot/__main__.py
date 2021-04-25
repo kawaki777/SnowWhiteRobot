@@ -50,6 +50,8 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+Snowwhite_IMG = "https://telegra.ph/file/c30652f178eaa054104cb.jpg"
+
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
@@ -189,8 +191,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-              Snowwhite_IMG = "https://telegra.ph/file/c30652f178eaa054104cb.jpg"
-,
+              SnowWhite_IMG, 
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
