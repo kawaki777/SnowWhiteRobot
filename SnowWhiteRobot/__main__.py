@@ -207,10 +207,10 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="Support Group",
-                             url=f"https://t.me/snow_white_support"),
+                             url=f"https://t.me/helpcenterbot1"),
                          InlineKeyboardButton(
-                             text="Update Channel",
-                             url="https://t.me/robot_snow_white")
+                             text="Update Loges",
+                             url="https://t.me/helpcenterbotloges")
                      ],
                      [
                          InlineKeyboardButton(
