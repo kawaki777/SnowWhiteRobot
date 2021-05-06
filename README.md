@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/c54190bb3556f4a47d238.jpg">
+  <img src="https://telegra.ph/file/701d8f34a35df3fb95524.jpg">
 </p>
 
 # Snow White Robot
