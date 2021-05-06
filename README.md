@@ -61,5 +61,5 @@ For starters click on this button
 * [Discussion](https://telegram.dog/helpcentrebot1)
 * [Second Group](https://telegram.dog/fire_world_entertainment)
 
-## Credits, and Thanks to ##BOT OWNER
+## Credits, and Thanks to BOT OWNER
 * [The Ghost Hunter](https://telegram.dog/The_Ghost_Hunter)
