@@ -53,6 +53,7 @@ emoji-country-flag
 countryinfo
 html2text
 bs4
+nekos
 bing_image_downloader
 search_engine_parser
 pytz
