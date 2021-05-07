@@ -25,7 +25,7 @@ url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from SnowWhiteRobot.helper_extra.aichat import add_chat, get_session, remove_chat
+from SnowWhiteRobot.helper_funcs.aichat import add_chat, get_session, remove_chat
 from SnowWhiteRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
 from SnowWhiteRobot import pbot as snowWhite
 
