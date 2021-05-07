@@ -35,7 +35,7 @@ fontTools
 spamwatch
 alphabet_detector
 pyrate-limiter
-helper_extra
+
 gtts
 nekos.py
 pybase64
