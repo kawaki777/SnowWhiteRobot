@@ -21,6 +21,7 @@ googletrans
 jikanpy
 speedtest-cli
 coffeehouse
+aichat
 cachetools
 google_trans_new
 regex
