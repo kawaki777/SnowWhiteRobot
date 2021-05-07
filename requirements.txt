@@ -36,6 +36,7 @@ alphabet_detector
 pyrate-limiter
 cachetools
 ujson
+redis
 pretty_errors
 TgCrypto
 Pyrogram
