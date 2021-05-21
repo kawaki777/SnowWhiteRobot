@@ -1,6 +1,6 @@
 from typing import Dict, List
 
-from AsunaRobot import NO_LOAD
+from SnowWhiteRobot import NO_LOAD
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
 from telegram.error import TelegramError
 
