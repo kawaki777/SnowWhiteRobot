@@ -4,7 +4,7 @@
 
 # Snow White Robot
 
-### Telegram Group
+### Support Group On Telegram
 <p align="left">
 <a href="https://t.me/snow_white_support" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
 
