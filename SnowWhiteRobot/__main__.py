@@ -53,15 +53,14 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by The Ghost Hunter for Entertainment groups, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+I am an Boruto:Naruto next generation anime themed group management bot,
+Built by weebs for weebs, I specialize in managing anime eccentric communities.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Eldian and help admins manage their groups with Some Powerful Titans! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hey there, I'm Kawaki Otsutsuki!
+To make me functional, make sure that i have enough rights in your group.
+
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -199,42 +198,44 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[
-                        InlineKeyboardButton(
-                            text="Add me in your group!",
-                            url="t.me/{}?startgroup=true".format(
-                                context.bot.username))
-                    ],
-                     [
-                         InlineKeyboardButton(
-                             text="Support Group",
-                             url=f"https://t.me/helpcenterbot1"),
-                         InlineKeyboardButton(
-                             text="Update Loges",
-                             url="https://t.me/helpcenterbotloges")
+                       InlineKeyboardButton(
+                           text="➕ Add Kawaki to your group!",
+                           url="t.me/@kawaki2op_bot?startgroup=true".format(
+                                 context.bot.username, 
+                               ),    
+                           ],
+                       [    
+                       InlineKeyboardButton(
+                           text="🗣️ Support",
+                           url=f"https://t.me/kawaki_support",         
                      ],
                      [
                          InlineKeyboardButton(
-                             text="FireWorldEntertainment Chat Group",
-                             url="https://t.me/fire_world_entertainment")
+                             text="🌐 Nexus Network",
+                             url="https://t.me/Nexus_Network")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Source Code.",
-                             url="https://github.com//HuntingBots/SnowWhiteRoBot/")
-                     
-
-
-
+                             text="⚙️ Help and Commands ",
+                             url="https://t.me/kawaki2op_bot?start=help",
                       ],
                       [
                          InlineKeyboardButton(
-                             text="My Master.",
-                             url="https://t.me/The_Ghost_Hunter")
-                     ]]))
+                                text="📋 Getting Started",
+                                url="https://t.me/GojoSataro_update/4",                            
+                            ),
+                        ],
+                    ],
+                ),
+            )
     else:
         update.effective_message.reply_text(
-            "Hey dear I'm Alive Now!\n<b>Up since:</b> <code>{}</code>".format(uptime),
-            parse_mode=ParseMode.HTML)
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+                uptime,
+            ),
+            parse_mode=ParseMode.HTML,
+        )    
+
 
 
 # for test purposes
