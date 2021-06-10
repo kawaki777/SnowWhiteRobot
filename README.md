@@ -2,7 +2,7 @@
   <img src="https://telegra.ph/file/701d8f34a35df3fb95524.jpg">
 </p>
 
-# Snow White Robot
+# Kawaki Ōtsutsuki Robot
 
 ### Support Group On Telegram
 <p align="left">
@@ -20,7 +20,7 @@ All that is needed is that your .py file is in the modules folder.
 
 To add commands, make sure to import the dispatcher via
 
-from SnowWhiteRobot import dispatcher.
+from kawakiRobot import dispatcher.
 
 You can then add commands using the usual
 
